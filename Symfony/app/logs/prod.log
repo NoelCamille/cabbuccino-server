@@ -36,3 +36,4 @@
 [2013-02-16 16:01:26] request.ERROR: Symfony\Component\HttpKernel\Exception\NotFoundHttpException: No route found for "GET /" (uncaught exception) at /Applications/MAMP/htdocs/Symfony/app/cache/prod/classes.php line 5121 [] []
 [2013-02-16 16:01:31] request.ERROR: Symfony\Component\HttpKernel\Exception\NotFoundHttpException: No route found for "GET /" (uncaught exception) at /Applications/MAMP/htdocs/Symfony/app/cache/prod/classes.php line 5121 [] []
 [2013-02-16 16:07:55] request.ERROR: Symfony\Component\HttpKernel\Exception\NotFoundHttpException: No route found for "GET /" (uncaught exception) at /Applications/MAMP/htdocs/Symfony/app/cache/prod/classes.php line 5121 [] []
+[2013-02-22 00:42:12] request.ERROR: Symfony\Component\HttpKernel\Exception\NotFoundHttpException: No route found for "GET /" (uncaught exception) at /Applications/MAMP/htdocs/Symfony/app/cache/prod/classes.php line 5121 [] []
