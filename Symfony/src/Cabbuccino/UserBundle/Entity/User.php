@@ -18,12 +18,22 @@ class User extends BaseUser
      * @ORM\GeneratedValue(strategy="AUTO")
      */
     protected $id;
+    
+    /**
+     * @ORM\OneToMany(targetEntity="Subscription", mappedBy="user_id")
+     */
+    protected $subscriptions;
 
     public function __construct()
     {
         parent::__construct();
         // your own logic
     }
+    
+    /**
+     * @ORM\Column(name="departure", type="string")
+     */
+    protected $name;
 
     /**
      * Get id

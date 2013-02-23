@@ -1,3 +1,8 @@
+cabbuccino_api:
+    resource: "@CabbuccinoApiBundle/Controller/"
+    type:     annotation
+    prefix:   /api/
+
 CabbuccioUserBundle:
     resource: "@CabbuccinoUserBundle/Resources/config/routing.yml"
     prefix:   /
