@@ -1,4 +1,4 @@
-cabbuccino_api:
+s2n_api:
     resource: "@CabbuccinoApiBundle/Controller/"
     type:     annotation
     prefix:   /api/

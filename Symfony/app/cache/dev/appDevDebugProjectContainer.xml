@@ -21,6 +21,7 @@
       <parameter key="JMSSecurityExtraBundle">JMS\SecurityExtraBundle\JMSSecurityExtraBundle</parameter>
       <parameter key="FOSUserBundle">FOS\UserBundle\FOSUserBundle</parameter>
       <parameter key="CabbuccinoUserBundle">Cabbuccino\UserBundle\CabbuccinoUserBundle</parameter>
+      <parameter key="CabbuccinoApiBundle">Cabbuccino\ApiBundle\CabbuccinoApiBundle</parameter>
       <parameter key="AcmeDemoBundle">Acme\DemoBundle\AcmeDemoBundle</parameter>
       <parameter key="WebProfilerBundle">Symfony\Bundle\WebProfilerBundle\WebProfilerBundle</parameter>
       <parameter key="SensioDistributionBundle">Sensio\Bundle\DistributionBundle\SensioDistributionBundle</parameter>
@@ -372,7 +373,7 @@
     <parameter key="assetic.write_to">/Applications/MAMP/htdocs/Symfony/app/../web</parameter>
     <parameter key="assetic.variables" type="collection"/>
     <parameter key="assetic.java.bin">/usr/bin/java</parameter>
-    <parameter key="assetic.node.bin">/usr/local/bin/node</parameter>
+    <parameter key="assetic.node.bin">/usr/bin/node</parameter>
     <parameter key="assetic.ruby.bin">/usr/bin/ruby</parameter>
     <parameter key="assetic.sass.bin">/usr/bin/sass</parameter>
     <parameter key="assetic.filter.cssrewrite.class">Assetic\Filter\CssRewriteFilter</parameter>
@@ -463,13 +464,8 @@
     <parameter key="jms_di_extra.directories" type="collection"/>
     <parameter key="jms_di_extra.cache_dir">/Applications/MAMP/htdocs/Symfony/app/cache/dev/jms_diextra</parameter>
     <parameter key="jms_di_extra.doctrine_integration">true</parameter>
-<<<<<<< HEAD
-    <parameter key="jms_di_extra.doctrine_integration.entity_manager.file">/Applications/MAMP/htdocs/Symfony/app/cache/dev/jms_diextra/doctrine/EntityManager_5126ac02287f0.php</parameter>
-    <parameter key="jms_di_extra.doctrine_integration.entity_manager.class">EntityManager5126ac02287f0_546a8d27f194334ee012bfe64f629947b07e4919\__CG__\Doctrine\ORM\EntityManager</parameter>
-=======
-    <parameter key="jms_di_extra.doctrine_integration.entity_manager.file">/Applications/MAMP/htdocs/Symfony/app/cache/dev/jms_diextra/doctrine/EntityManager_5120ec8ee4e43.php</parameter>
-    <parameter key="jms_di_extra.doctrine_integration.entity_manager.class">EntityManager5120ec8ee4e43_546a8d27f194334ee012bfe64f629947b07e4919\__CG__\Doctrine\ORM\EntityManager</parameter>
->>>>>>> petits changements
+    <parameter key="jms_di_extra.doctrine_integration.entity_manager.file">/Applications/MAMP/htdocs/Symfony/app/cache/dev/jms_diextra/doctrine/EntityManager_512ba454ce7ea.php</parameter>
+    <parameter key="jms_di_extra.doctrine_integration.entity_manager.class">EntityManager512ba454ce7ea_546a8d27f194334ee012bfe64f629947b07e4919\__CG__\Doctrine\ORM\EntityManager</parameter>
     <parameter key="security.secured_services" type="collection"/>
     <parameter key="security.access.method_interceptor.class">JMS\SecurityExtraBundle\Security\Authorization\Interception\MethodSecurityInterceptor</parameter>
     <parameter key="security.access.method_access_control" type="collection"/>
@@ -2369,11 +2365,7 @@
         </argument>
         <argument type="service">
           <service class="Symfony\Component\Security\Core\Authentication\Provider\AnonymousAuthenticationProvider" public="false">
-<<<<<<< HEAD
-            <argument>5126ac0177010</argument>
-=======
-            <argument>5120ec8e5d1ea</argument>
->>>>>>> petits changements
+            <argument>512ba4548c9a4</argument>
           </service>
         </argument>
       </argument>
@@ -2647,11 +2639,7 @@
         <argument type="service">
           <service class="Symfony\Component\Security\Http\Firewall\AnonymousAuthenticationListener" public="false">
             <argument type="service" id="security.context"/>
-<<<<<<< HEAD
-            <argument>5126ac0177010</argument>
-=======
-            <argument>5120ec8e5d1ea</argument>
->>>>>>> petits changements
+            <argument>512ba4548c9a4</argument>
             <argument type="service" id="monolog.logger.security"/>
           </service>
         </argument>
@@ -3076,13 +3064,8 @@
     <service id="doctrine.orm.default_manager_configurator" class="Doctrine\Bundle\DoctrineBundle\ManagerConfigurator">
       <argument type="collection"/>
     </service>
-<<<<<<< HEAD
-    <service id="doctrine.orm.default_entity_manager" class="EntityManager5126ac02287f0_546a8d27f194334ee012bfe64f629947b07e4919\__CG__\Doctrine\ORM\EntityManager">
-      <file>/Applications/MAMP/htdocs/Symfony/app/cache/dev/jms_diextra/doctrine/EntityManager_5126ac02287f0.php</file>
-=======
-    <service id="doctrine.orm.default_entity_manager" class="EntityManager5120ec8ee4e43_546a8d27f194334ee012bfe64f629947b07e4919\__CG__\Doctrine\ORM\EntityManager">
-      <file>/Applications/MAMP/htdocs/Symfony/app/cache/dev/jms_diextra/doctrine/EntityManager_5120ec8ee4e43.php</file>
->>>>>>> petits changements
+    <service id="doctrine.orm.default_entity_manager" class="EntityManager512ba454ce7ea_546a8d27f194334ee012bfe64f629947b07e4919\__CG__\Doctrine\ORM\EntityManager">
+      <file>/Applications/MAMP/htdocs/Symfony/app/cache/dev/jms_diextra/doctrine/EntityManager_512ba454ce7ea.php</file>
       <argument type="service">
         <service class="Doctrine\ORM\EntityManager" factory-method="create" public="false">
           <argument type="service" id="doctrine.dbal.default_connection"/>
