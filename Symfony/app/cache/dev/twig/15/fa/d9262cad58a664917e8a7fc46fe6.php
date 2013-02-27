@@ -19,11 +19,11 @@ class __TwigTemplate_15fad9262cad58a664917e8a7fc46fe6 extends Twig_Template
         echo "<form action=\"";
         echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("fos_user_profile_edit"), "html", null, true);
         echo "\" ";
-        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getContext($context, "form"), 'enctype');
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), 'enctype');
         echo " method=\"POST\" class=\"fos_user_profile_edit\">
     ";
         // line 2
-        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getContext($context, "form"), 'widget');
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), 'widget');
         echo "
     <div>
         <input type=\"submit\" value=\"";

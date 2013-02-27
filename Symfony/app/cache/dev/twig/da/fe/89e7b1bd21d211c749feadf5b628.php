@@ -21,9 +21,9 @@ class __TwigTemplate_dafe89e7b1bd21d211c749feadf5b628 extends Twig_Template
 
 The server returned a \"";
         // line 4
-        echo twig_escape_filter($this->env, $this->getContext($context, "status_code"), "html", null, true);
+        echo twig_escape_filter($this->env, (isset($context["status_code"]) ? $context["status_code"] : $this->getContext($context, "status_code")), "html", null, true);
         echo " ";
-        echo twig_escape_filter($this->env, $this->getContext($context, "status_text"), "html", null, true);
+        echo twig_escape_filter($this->env, (isset($context["status_text"]) ? $context["status_text"] : $this->getContext($context, "status_text")), "html", null, true);
         echo "\".
 
 Please e-mail us at [email] and let us know what you were doing when this

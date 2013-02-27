@@ -31,7 +31,7 @@ class __TwigTemplate_6d28fd18b0ed0c8c5e42952698a1949b extends Twig_Template
         echo "<p>
 ";
         // line 5
-        echo twig_escape_filter($this->env, $this->env->getExtension('translator')->trans("resetting.check_email", array("%email%" => $this->getContext($context, "email")), "FOSUserBundle"), "html", null, true);
+        echo twig_escape_filter($this->env, $this->env->getExtension('translator')->trans("resetting.check_email", array("%email%" => (isset($context["email"]) ? $context["email"] : $this->getContext($context, "email"))), "FOSUserBundle"), "html", null, true);
         echo "
 </p>
 ";

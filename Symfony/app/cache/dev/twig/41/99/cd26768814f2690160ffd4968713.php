@@ -28,10 +28,10 @@ class __TwigTemplate_4199cd26768814f2690160ffd4968713 extends Twig_Template
     public function block_fos_user_content($context, array $blocks = array())
     {
         // line 4
-        if ($this->getContext($context, "error")) {
+        if ((isset($context["error"]) ? $context["error"] : $this->getContext($context, "error"))) {
             // line 5
             echo "    <div>";
-            echo twig_escape_filter($this->env, $this->env->getExtension('translator')->trans($this->getContext($context, "error"), array(), "FOSUserBundle"), "html", null, true);
+            echo twig_escape_filter($this->env, $this->env->getExtension('translator')->trans((isset($context["error"]) ? $context["error"] : $this->getContext($context, "error")), array(), "FOSUserBundle"), "html", null, true);
             echo "</div>
 ";
         }
@@ -43,7 +43,7 @@ class __TwigTemplate_4199cd26768814f2690160ffd4968713 extends Twig_Template
         echo "\" method=\"post\">
     <input type=\"hidden\" name=\"_csrf_token\" value=\"";
         // line 9
-        echo twig_escape_filter($this->env, $this->getContext($context, "csrf_token"), "html", null, true);
+        echo twig_escape_filter($this->env, (isset($context["csrf_token"]) ? $context["csrf_token"] : $this->getContext($context, "csrf_token")), "html", null, true);
         echo "\" />
 
     <label for=\"username\">";
@@ -52,7 +52,7 @@ class __TwigTemplate_4199cd26768814f2690160ffd4968713 extends Twig_Template
         echo "</label>
     <input type=\"text\" id=\"username\" name=\"_username\" value=\"";
         // line 12
-        echo twig_escape_filter($this->env, $this->getContext($context, "last_username"), "html", null, true);
+        echo twig_escape_filter($this->env, (isset($context["last_username"]) ? $context["last_username"] : $this->getContext($context, "last_username")), "html", null, true);
         echo "\" required=\"required\" />
 
     <label for=\"password\">";

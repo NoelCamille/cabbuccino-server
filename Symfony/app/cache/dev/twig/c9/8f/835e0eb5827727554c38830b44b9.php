@@ -21,7 +21,7 @@ class __TwigTemplate_c98f835e0eb5827727554c38830b44b9 extends Twig_Template
         // line 2
         echo twig_escape_filter($this->env, $this->env->getExtension('translator')->trans("group.show.name", array(), "FOSUserBundle"), "html", null, true);
         echo ": ";
-        echo twig_escape_filter($this->env, $this->getAttribute($this->getContext($context, "group"), "getName", array(), "method"), "html", null, true);
+        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["group"]) ? $context["group"] : $this->getContext($context, "group")), "getName", array(), "method"), "html", null, true);
         echo "</p>
 </div>
 ";

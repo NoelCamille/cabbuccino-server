@@ -30,7 +30,7 @@ class __TwigTemplate_434e83606840ea234ba128339793359b extends Twig_Template
     // line 3
     public function block_title($context, array $blocks = array())
     {
-        echo twig_escape_filter($this->env, ("Hello " . $this->getContext($context, "name")), "html", null, true);
+        echo twig_escape_filter($this->env, ("Hello " . (isset($context["name"]) ? $context["name"] : $this->getContext($context, "name"))), "html", null, true);
     }
 
     // line 5
@@ -38,7 +38,7 @@ class __TwigTemplate_434e83606840ea234ba128339793359b extends Twig_Template
     {
         // line 6
         echo "    <h1>Hello ";
-        echo twig_escape_filter($this->env, $this->getContext($context, "name"), "html", null, true);
+        echo twig_escape_filter($this->env, (isset($context["name"]) ? $context["name"] : $this->getContext($context, "name")), "html", null, true);
         echo "!</h1>
 ";
     }

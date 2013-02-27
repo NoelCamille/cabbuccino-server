@@ -19,7 +19,7 @@ class __TwigTemplate_8edc210b6cd80b475a2fc383a563b93b extends Twig_Template
         echo "<table ";
         if (array_key_exists("class", $context)) {
             echo "class='";
-            echo twig_escape_filter($this->env, $this->getContext($context, "class"), "html", null, true);
+            echo twig_escape_filter($this->env, (isset($context["class"]) ? $context["class"] : $this->getContext($context, "class")), "html", null, true);
             echo "'";
         }
         echo " >
@@ -33,17 +33,17 @@ class __TwigTemplate_8edc210b6cd80b475a2fc383a563b93b extends Twig_Template
         ";
         // line 9
         $context['_parent'] = (array) $context;
-        $context['_seq'] = twig_ensure_traversable(twig_sort_filter(twig_get_array_keys_filter($this->getContext($context, "data"))));
+        $context['_seq'] = twig_ensure_traversable(twig_sort_filter(twig_get_array_keys_filter((isset($context["data"]) ? $context["data"] : $this->getContext($context, "data")))));
         foreach ($context['_seq'] as $context["_key"] => $context["key"]) {
             // line 10
             echo "            <tr>
                 <th>";
             // line 11
-            echo twig_escape_filter($this->env, $this->getContext($context, "key"), "html", null, true);
+            echo twig_escape_filter($this->env, (isset($context["key"]) ? $context["key"] : $this->getContext($context, "key")), "html", null, true);
             echo "</th>
                 <td>";
             // line 12
-            echo twig_escape_filter($this->env, $this->env->getExtension('yaml')->dump($this->getAttribute($this->getContext($context, "data"), $this->getContext($context, "key"), array(), "array")), "html", null, true);
+            echo twig_escape_filter($this->env, $this->env->getExtension('yaml')->dump($this->getAttribute((isset($context["data"]) ? $context["data"] : $this->getContext($context, "data")), (isset($context["key"]) ? $context["key"] : $this->getContext($context, "key")), array(), "array")), "html", null, true);
             echo "</td>
             </tr>
         ";

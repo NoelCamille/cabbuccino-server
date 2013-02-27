@@ -103,6 +103,7 @@
   'FOSUserBundle:Resetting:reset_content.html.twig' => '/Applications/MAMP/htdocs/Symfony/vendor/friendsofsymfony/user-bundle/FOS/UserBundle/Resources/views/Resetting/reset_content.html.twig',
   'FOSUserBundle:Security:login.html.twig' => '/Applications/MAMP/htdocs/Symfony/vendor/friendsofsymfony/user-bundle/FOS/UserBundle/Resources/views/Security/login.html.twig',
   'CabbuccinoUserBundle:Default:index.html.twig' => '/Applications/MAMP/htdocs/Symfony/src/Cabbuccino/UserBundle/Resources/views/Default/index.html.twig',
+  'CabbuccinoApiBundle:Default:index.html.twig' => '/Applications/MAMP/htdocs/Symfony/src/Cabbuccino/ApiBundle/Resources/views/Default/index.html.twig',
   'AcmeDemoBundle:Demo:contact.html.twig' => '/Applications/MAMP/htdocs/Symfony/src/Acme/DemoBundle/Resources/views/Demo/contact.html.twig',
   'AcmeDemoBundle:Demo:hello.html.twig' => '/Applications/MAMP/htdocs/Symfony/src/Acme/DemoBundle/Resources/views/Demo/hello.html.twig',
   'AcmeDemoBundle:Demo:index.html.twig' => '/Applications/MAMP/htdocs/Symfony/src/Acme/DemoBundle/Resources/views/Demo/index.html.twig',

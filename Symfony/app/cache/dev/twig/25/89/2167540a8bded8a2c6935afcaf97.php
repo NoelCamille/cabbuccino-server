@@ -17,7 +17,7 @@ class __TwigTemplate_25892167540a8bded8a2c6935afcaf97 extends Twig_Template
     {
         // line 1
         echo "Hello ";
-        echo twig_escape_filter($this->env, $this->getContext($context, "name"), "html", null, true);
+        echo twig_escape_filter($this->env, (isset($context["name"]) ? $context["name"] : $this->getContext($context, "name")), "html", null, true);
         echo "!
 ";
     }

@@ -31,11 +31,6 @@ class User extends BaseUser
     }
     
     /**
-     * @ORM\Column(name="departure", type="string")
-     */
-    protected $name;
-
-    /**
      * Get id
      *
      * @return integer 

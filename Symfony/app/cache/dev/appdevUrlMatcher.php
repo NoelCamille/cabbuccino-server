@@ -162,9 +162,14 @@ class appdevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
 
         }
 
-        // cabbuccino_api_default_index
-        if (0 === strpos($pathinfo, '/api/hello') && preg_match('#^/api/hello/(?P<name>[^/]+)$#s', $pathinfo, $matches)) {
-            return array_merge($this->mergeDefaults($matches, array (  '_controller' => 'Cabbuccino\\ApiBundle\\Controller\\DefaultController::indexAction',)), array('_route' => 'cabbuccino_api_default_index'));
+        // cabbuccino_api_accountapi_account
+        if ($pathinfo === '/api/account') {
+            return array (  '_controller' => 'Cabbuccino\\ApiBundle\\Controller\\AccountApiController::accountAction',  '_route' => 'cabbuccino_api_accountapi_account',);
+        }
+
+        // cabbuccino_api_searchapi_search
+        if ($pathinfo === '/api/search') {
+            return array (  '_controller' => 'Cabbuccino\\ApiBundle\\Controller\\SearchApiController::searchAction',  '_route' => 'cabbuccino_api_searchapi_search',);
         }
 
         // fos_user_security_login
