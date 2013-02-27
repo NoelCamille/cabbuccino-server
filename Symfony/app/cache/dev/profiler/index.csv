@@ -4,5 +4,8 @@
 512e4239e4057,127.0.0.1,GET,http://cabbuccino.com/app_dev.php/api/account/franck,1361986105,
 512e423ecedb5,127.0.0.1,GET,http://cabbuccino.com/app_dev.php/api/account/Franck,1361986110,
 512e4245a445a,127.0.0.1,GET,http://cabbuccino.com/app_dev.php/api/account/jm,1361986117,
+<<<<<<< HEAD
 512e46c103fae,127.0.0.1,GET,http://cabbuccino.com/app_dev.php/api/search,1361987265,
 512e4ad21757b,127.0.0.1,GET,http://cabbuccino.com/app_dev.php/api/search,1361988306,
+=======
+>>>>>>> 469a8c613cab29a38898352e8348425474d7bca0
