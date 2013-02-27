@@ -163,8 +163,8 @@ class appdevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
         }
 
         // cabbuccino_api_accountapi_account
-        if ($pathinfo === '/api/account') {
-            return array (  '_controller' => 'Cabbuccino\\ApiBundle\\Controller\\AccountApiController::accountAction',  '_route' => 'cabbuccino_api_accountapi_account',);
+        if (0 === strpos($pathinfo, '/api/account') && preg_match('#^/api/account/(?P<name>[^/]+)$#s', $pathinfo, $matches)) {
+            return array_merge($this->mergeDefaults($matches, array (  '_controller' => 'Cabbuccino\\ApiBundle\\Controller\\AccountApiController::accountAction',)), array('_route' => 'cabbuccino_api_accountapi_account'));
         }
 
         // cabbuccino_api_searchapi_search
