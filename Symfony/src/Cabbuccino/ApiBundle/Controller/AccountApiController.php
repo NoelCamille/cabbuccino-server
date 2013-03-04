@@ -22,7 +22,7 @@ class AccountApiController extends ApiController
         $id = $this->searchAccount($name);
         
         if($id>0){
-        	return new Response($this->json_encode($id));
+        	return new Response(json_encode($id));
         } else {
         	$this->createAccount($name);
         }
